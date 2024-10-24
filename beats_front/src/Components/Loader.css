@@ -1,0 +1,40 @@
+.bouncing-shapes {
+  display: flex;
+  justify-content: space-around;
+  width: 200px;
+}
+
+.shape {
+  width: 40px;
+  height: 40px;
+  animation: bounce 0.6s infinite alternate;
+}
+
+.square {
+  background-color: #ff6f61;
+  /* Red Square */
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 35px solid #ffcc00;
+  /* Yellow Triangle */
+  animation-delay: 0.2s;
+}
+
+.circle {
+  background-color: #6b5b95;
+  /* Purple Circle */
+  border-radius: 50%;
+  animation-delay: 0.4s;
+}
+
+@keyframes bounce {
+  to {
+    transform: translateY(-50px);
+    /* Bouncing upwards */
+  }
+}
